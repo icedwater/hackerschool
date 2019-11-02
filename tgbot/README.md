@@ -6,4 +6,6 @@
  - pip
  - virtualenv # maybe venv
 
-Slides available at bit.ly/hs-2019-bot-materials
+Slides and code available at [a shared GDrive location][share].
+
+[share]: http://bit.ly/hs-2019-bot-materials
