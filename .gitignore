@@ -1,0 +1,8 @@
+# vim swaps
+*.sw?
+
+# Python objects
+*.py?
+
+# PDF
+*.pdf
