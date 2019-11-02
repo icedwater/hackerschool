@@ -5,6 +5,7 @@
  - python 3.7
  - pip
  - virtualenv # maybe venv
+ - TextToOwO # for following the slides
 
 Slides and code available at [a shared GDrive location][share].
 
