@@ -4,9 +4,12 @@
 The python-telegram-bot API is called telegram.ext. Here we define the
 functions that will make the bot respond.
 """
-
+import logging
 from TextToOwO import owo
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+
+logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+                    level=logging.INFO)
 
 def start(update, context):
     """
