@@ -23,6 +23,13 @@ def help(update, context):
     """
     update.message.reply_text("I'm afraid there is no help for you.")
 
+def other_text(update, context):
+    """
+    For everything else that's not a command, owofy it.
+    """
+    reply = owo.text_to_owo(update.message.text)
+    context.bot.send_message(chat_id=update.effective_chat.id, text=reply)
+
 def main():
     """
     This actually runs the bot given the functions above.
@@ -37,6 +44,7 @@ def main():
     # if you have new handlers, you can register them here
     dispatch.add_handler(CommandHandler("start", start))
     dispatch.add_handler(CommandHandler("help", help))
+    dispatch.add_handler(MessageHandler(Filters.text, other_text))
 
     # start the bot and let it run until terminated
     updater.start_polling()
